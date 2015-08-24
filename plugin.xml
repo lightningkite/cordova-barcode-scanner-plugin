@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    id="lk-barcode-scanner-plugin"
+    version="4.0.1">
+    
+    <name>LKBarcodeScanner</name>
+    <description>You can use the BarcodeScanner plugin to scan different types of barcodes (using the device's camera) and get the metadata encoded in them for processing within your application.</description>
+    <license>MIT</license>
+    
+    <repo>https://github.com/lightningkite/lk-barcode-scanner-plugin</repo>
+    <issue>https://github.com/lightningkite/lk-barcode-scanner-plugin/issues</issue>
+    
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+    
+    <js-module src="www/lkbarcodescanner.js" name="LKBarcodeScanner">
+        <clobbers target="cordova.plugins.lkBarcodeScanner" />
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <!-- Cordova >= 2.8 -->
+        <config-file target="config.xml" parent="/*">
+            <feature name="LKBarcodeScanner">
+                <param name="ios-package" value="LKBarcodeScanner" />
+            </feature>
+        </config-file>
+        
+        <resource-file src="src/ios/LKBarcodeScannerPlugin/Main.xib" />
+
+        <source-file src="src/ios/LKBarcodeScannerPlugin/LKScannerViewController.swift" />
+        <source-file src="src/ios/LKBarcodeScannerPlugin/LKBarcodeScanner.swift" />
+
+        <header-file src="src/ios/LKBarcodeScannerPlugin/Bridging.h" />
+
+        <framework src="AVFoundation.framework" />
+        <framework src="QuartzCore.framework" />
+    </platform>
+</plugin>

@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAA235711B8781170026CA5F /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA2356E1B8780C90026CA5F /* libCordova.a */; };
+		AAA2358B1B8B75270026CA5F /* plugin.xml in Resources */ = {isa = PBXBuildFile; fileRef = AAA2358A1B8B75270026CA5F /* plugin.xml */; };
+		AAA2358D1B8B753F0026CA5F /* www in Resources */ = {isa = PBXBuildFile; fileRef = AAA2358C1B8B753F0026CA5F /* www */; };
+		AAA2358F1B8B75600026CA5F /* LKBarcodeScannerPlugin in Resources */ = {isa = PBXBuildFile; fileRef = AAA2358E1B8B75600026CA5F /* LKBarcodeScannerPlugin */; };
+		AAA24FBE1B86789200A6E3AE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA24FBD1B86789200A6E3AE /* AVFoundation.framework */; };
+		AAA24FC01B86789900A6E3AE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA24FBF1B86789900A6E3AE /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAA2356D1B8780C90026CA5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAA235691B8780C90026CA5F /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 68A32D7114102E1C006B237C;
+			remoteInfo = CordovaLib;
+		};
+		AAA2356F1B8781010026CA5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAA235691B8780C90026CA5F /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AAA235691B8780C90026CA5F /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = LKBarcodeScannerPlugin.xcodeproj/../CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		AAA2358A1B8B75270026CA5F /* plugin.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = plugin.xml; path = ../../plugin.xml; sourceTree = "<group>"; };
+		AAA2358C1B8B753F0026CA5F /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		AAA2358E1B8B75600026CA5F /* LKBarcodeScannerPlugin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LKBarcodeScannerPlugin; sourceTree = "<group>"; };
+		AAA24F981B86785E00A6E3AE /* LKBarcodeScannerPlugin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LKBarcodeScannerPlugin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAA24FBD1B86789200A6E3AE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AAA24FBF1B86789900A6E3AE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAA24F951B86785E00A6E3AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAA235711B8781170026CA5F /* libCordova.a in Frameworks */,
+				AAA24FC01B86789900A6E3AE /* QuartzCore.framework in Frameworks */,
+				AAA24FBE1B86789200A6E3AE /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAA2356A1B8780C90026CA5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAA2356E1B8780C90026CA5F /* libCordova.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAA24F8F1B86785E00A6E3AE = {
+			isa = PBXGroup;
+			children = (
+				AAA2358E1B8B75600026CA5F /* LKBarcodeScannerPlugin */,
+				AAA2358C1B8B753F0026CA5F /* www */,
+				AAA2358A1B8B75270026CA5F /* plugin.xml */,
+				AAA235691B8780C90026CA5F /* CordovaLib.xcodeproj */,
+				AAA24FBF1B86789900A6E3AE /* QuartzCore.framework */,
+				AAA24FBD1B86789200A6E3AE /* AVFoundation.framework */,
+				AAA24F991B86785E00A6E3AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAA24F991B86785E00A6E3AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAA24F981B86785E00A6E3AE /* LKBarcodeScannerPlugin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAA24F971B86785E00A6E3AE /* LKBarcodeScannerPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAA24FB71B86785E00A6E3AE /* Build configuration list for PBXNativeTarget "LKBarcodeScannerPlugin" */;
+			buildPhases = (
+				AAA24F941B86785E00A6E3AE /* Sources */,
+				AAA24F951B86785E00A6E3AE /* Frameworks */,
+				AAA24F961B86785E00A6E3AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAA235701B8781010026CA5F /* PBXTargetDependency */,
+			);
+			name = LKBarcodeScannerPlugin;
+			productName = "Cordova Barcode Scanner Plugin";
+			productReference = AAA24F981B86785E00A6E3AE /* LKBarcodeScannerPlugin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAA24F901B86785E00A6E3AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Christian West";
+				TargetAttributes = {
+					AAA24F971B86785E00A6E3AE = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = EF4N5K3F2Q;
+					};
+				};
+			};
+			buildConfigurationList = AAA24F931B86785E00A6E3AE /* Build configuration list for PBXProject "LKBarcodeScannerPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAA24F8F1B86785E00A6E3AE;
+			productRefGroup = AAA24F991B86785E00A6E3AE /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AAA2356A1B8780C90026CA5F /* Products */;
+					ProjectRef = AAA235691B8780C90026CA5F /* CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				AAA24F971B86785E00A6E3AE /* LKBarcodeScannerPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AAA2356E1B8780C90026CA5F /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = AAA2356D1B8780C90026CA5F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAA24F961B86785E00A6E3AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAA2358F1B8B75600026CA5F /* LKBarcodeScannerPlugin in Resources */,
+				AAA2358D1B8B753F0026CA5F /* www in Resources */,
+				AAA2358B1B8B75270026CA5F /* plugin.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAA24F941B86785E00A6E3AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAA235701B8781010026CA5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = AAA2356F1B8781010026CA5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AAA24FB51B86785E00A6E3AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAA24FB61B86785E00A6E3AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAA24FB81B86785E00A6E3AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = LKBarcodeScannerPlugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CordovaLib/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/LKBarcodeScannerPlugin-enjmwnootntxesapjrbusxraubdo/Build/Products/Debug-iphoneos",
+				);
+				PRODUCT_NAME = LKBarcodeScannerPlugin;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = LKBarcodeScannerPlugin/Bridging.h;
+			};
+			name = Debug;
+		};
+		AAA24FB91B86785E00A6E3AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				INFOPLIST_FILE = LKBarcodeScannerPlugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CordovaLib/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/LKBarcodeScannerPlugin-enjmwnootntxesapjrbusxraubdo/Build/Products/Debug-iphoneos",
+				);
+				PRODUCT_NAME = LKBarcodeScannerPlugin;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = LKBarcodeScannerPlugin/Bridging.h;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAA24F931B86785E00A6E3AE /* Build configuration list for PBXProject "LKBarcodeScannerPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAA24FB51B86785E00A6E3AE /* Debug */,
+				AAA24FB61B86785E00A6E3AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAA24FB71B86785E00A6E3AE /* Build configuration list for PBXNativeTarget "LKBarcodeScannerPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAA24FB81B86785E00A6E3AE /* Debug */,
+				AAA24FB91B86785E00A6E3AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAA24F901B86785E00A6E3AE /* Project object */;
+}
