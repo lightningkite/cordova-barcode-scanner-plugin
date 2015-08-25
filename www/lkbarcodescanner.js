@@ -4,8 +4,6 @@
  *
  */
 
-console.log("Am I even getting here?");
-
 var exec = require("cordova/exec");
 
 /**
