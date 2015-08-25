@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA2A1F7D1B8D1FB8008017EA /* img in Resources */ = {isa = PBXBuildFile; fileRef = AA2A1F7C1B8D1FB8008017EA /* img */; };
 		AAA235711B8781170026CA5F /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA2356E1B8780C90026CA5F /* libCordova.a */; };
 		AAA2358B1B8B75270026CA5F /* plugin.xml in Resources */ = {isa = PBXBuildFile; fileRef = AAA2358A1B8B75270026CA5F /* plugin.xml */; };
 		AAA2358D1B8B753F0026CA5F /* www in Resources */ = {isa = PBXBuildFile; fileRef = AAA2358C1B8B753F0026CA5F /* www */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA2A1F7C1B8D1FB8008017EA /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; name = img; path = ../../img; sourceTree = "<group>"; };
 		AAA235691B8780C90026CA5F /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = LKBarcodeScannerPlugin.xcodeproj/../CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		AAA2358A1B8B75270026CA5F /* plugin.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = plugin.xml; path = ../../plugin.xml; sourceTree = "<group>"; };
 		AAA2358C1B8B753F0026CA5F /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			children = (
 				AAA2358E1B8B75600026CA5F /* LKBarcodeScannerPlugin */,
 				AAA2358C1B8B753F0026CA5F /* www */,
+				AA2A1F7C1B8D1FB8008017EA /* img */,
 				AAA2358A1B8B75270026CA5F /* plugin.xml */,
 				AAA235691B8780C90026CA5F /* CordovaLib.xcodeproj */,
 				AAA24FBF1B86789900A6E3AE /* QuartzCore.framework */,
@@ -160,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2A1F7D1B8D1FB8008017EA /* img in Resources */,
 				AAA2358F1B8B75600026CA5F /* LKBarcodeScannerPlugin in Resources */,
 				AAA2358D1B8B753F0026CA5F /* www in Resources */,
 				AAA2358B1B8B75270026CA5F /* plugin.xml in Resources */,

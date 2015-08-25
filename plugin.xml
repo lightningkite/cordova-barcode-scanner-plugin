@@ -25,7 +25,11 @@
                 <param name="ios-package" value="LKBarcodeScanner" />
             </feature>
         </config-file>
-        
+
+        <resource-file src="img/Scan_Overlay.png" />
+        <resource-file src="img/Scan_Overlay@2x.png" />
+        <resource-file src="img/Scan_Overlay@3x.png" />
+
         <source-file src="src/ios/LKBarcodeScannerPlugin/LKScannerViewController.swift" />
         <source-file src="src/ios/LKBarcodeScannerPlugin/LKBarcodeScanner.swift" />
 
