@@ -26,8 +26,6 @@
             </feature>
         </config-file>
         
-        <resource-file src="src/ios/LKBarcodeScannerPlugin/Main.xib" />
-
         <source-file src="src/ios/LKBarcodeScannerPlugin/LKScannerViewController.swift" />
         <source-file src="src/ios/LKBarcodeScannerPlugin/LKBarcodeScanner.swift" />
 
