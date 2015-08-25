@@ -18,7 +18,7 @@ class LKScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsD
     lazy var device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
     
     var barcode = ""
-    
+    var lkBarcodeScanner: LKBarcodeScanner?
     
     //MARK: View Lifecycle
     override func viewDidLoad() {
@@ -88,6 +88,20 @@ class LKScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsD
         helpText.layer.shadowOpacity = 1
         
         view.addSubview(helpText)
+        
+        let cancelButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
+        cancelButton.frame = CGRect(x: 8, y: 30, width: 100, height: 30)
+        cancelButton.setTitle("Cancel", forState: .Normal)
+        cancelButton.addTarget(self, action: "cancelTap", forControlEvents: .TouchUpInside)
+        cancelButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        cancelButton.titleLabel?.font = UIFont(name: "HelveticaNeue", size: 17)
+        
+        cancelButton.titleLabel?.layer.shadowColor = UIColor.blackColor().CGColor
+        cancelButton.titleLabel?.layer.shadowOffset = CGSizeMake(0, 0)
+        cancelButton.titleLabel?.layer.shadowRadius = 2.0
+        cancelButton.titleLabel?.layer.shadowOpacity = 1
+        
+        view.addSubview(cancelButton)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -120,6 +134,11 @@ class LKScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsD
     
     
     //MARK: Actions
+    func cancelTap() {
+        lkBarcodeScanner?.cancelScan()
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     func onTap(gesture: UITapGestureRecognizer) {
         let tapPoint = gesture.locationInView(self.view)
         let focusPoint = CGPointMake(
@@ -143,8 +162,10 @@ class LKScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsD
                 let barcodeObject = transformedMetadataObject as! AVMetadataMachineReadableCodeObject
                 
                 barcode = barcodeObject.stringValue
-
+                
                 dispatch_async(dispatch_get_main_queue(), {
+                    self.lkBarcodeScanner?.foundCode(self.barcode)
+                    self.dismissViewControllerAnimated(true, completion: nil)
                 })
                 session.stopRunning()
             }

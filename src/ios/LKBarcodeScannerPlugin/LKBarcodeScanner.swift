@@ -10,14 +10,34 @@ import Foundation
 
 @objc(LKBarcodeScanner)
 class LKBarcodeScanner: CDVPlugin {
+    var callbackContext: String?
+    
     func scan(command: CDVInvokedUrlCommand) {
-        var message = command.arguments[0] as! String
+        callbackContext = command.callbackId
         
-        println("Hey guys")
-        
-        message = message.uppercaseString // Prove the plugin is actually doing something
-        
-        var pluginResult = CDVPluginResult(status: CDVCommandStatus_OK, messageAsString: message)
-        commandDelegate.sendPluginResult(pluginResult, callbackId:command.callbackId)
+        let viewController = LKScannerViewController()
+        viewController.lkBarcodeScanner = self
+        self.viewController.presentViewController(viewController, animated: true, completion: nil)
+        commandDelegate.runInBackground {
+            var pluginResult: CDVPluginResult = CDVPluginResult(status: CDVCommandStatus_NO_RESULT)
+            pluginResult.setKeepCallbackAsBool(true)
+            self.commandDelegate.sendPluginResult(pluginResult, callbackId:command.callbackId)
+        }
+    }
+    
+    func foundCode(data: String) {
+        if let callbackContext = callbackContext {
+            var pluginResult:CDVPluginResult = CDVPluginResult(status: CDVCommandStatus_OK, messageAsDictionary: ["scanned": true, "data": data])
+            pluginResult.setKeepCallbackAsBool(false)
+            commandDelegate.sendPluginResult(pluginResult, callbackId:callbackContext)
+        }
+    }
+    
+    func cancelScan() {
+        if let callbackContext = callbackContext {
+            var pluginResult:CDVPluginResult = CDVPluginResult(status: CDVCommandStatus_OK, messageAsDictionary: ["scanned": false])
+            pluginResult.setKeepCallbackAsBool(false)
+            commandDelegate.sendPluginResult(pluginResult, callbackId:callbackContext)
+        }
     }
 }
