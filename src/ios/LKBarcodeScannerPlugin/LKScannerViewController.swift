@@ -22,10 +22,7 @@ class LKScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsD
     
     //MARK: View Lifecycle
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Force the device in portrait mode when the view controller gets loaded
-        UIDevice.currentDevice().setValue(UIInterfaceOrientation.Portrait.rawValue, forKey: "orientation")
+        super.viewDidLoad()        
     }
     
     override func viewWillAppear(animated: Bool) {
