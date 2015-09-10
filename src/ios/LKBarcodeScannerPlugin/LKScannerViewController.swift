@@ -23,7 +23,11 @@ class LKScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsD
     //MARK: View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
         // Create a nilable NSError to hand off to the next method.
         // Make sure to use the “var” keyword and not “let”
         var error : NSError? = nil
@@ -64,8 +68,6 @@ class LKScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsD
         previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
         self.view.layer.addSublayer(previewLayer)
         
-        session.startRunning()
-        
         let gesture = UITapGestureRecognizer(target: self, action: "onTap:")
         view.addGestureRecognizer(gesture)
         
@@ -102,10 +104,6 @@ class LKScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsD
         cancelButton.titleLabel?.layer.shadowOpacity = 1
         
         view.addSubview(cancelButton)
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "applicationWillEnterForeground", name:UIApplicationWillEnterForegroundNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "applicationDidEnterBackground", name: UIApplicationDidEnterBackgroundNotification, object: nil)

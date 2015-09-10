@@ -24,6 +24,7 @@
             <feature name="LKBarcodeScanner">
                 <param name="ios-package" value="LKBarcodeScanner" />
             </feature>
+            <preference name="orientation" value="portrait" />
         </config-file>
 
         <resource-file src="img/Scan_Overlay.png" />
